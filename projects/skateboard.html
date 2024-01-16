@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Planning and Control of Physics-Based Skateboarding Animation</title>
+
+  <meta property="og:title" content="Online Planning and Control of Physics-Based Skateboarding Animation">
+  <meta property="og:description" content="Project page for Online Planning and Control of Physics-Based Skateboarding Animation">
+  <meta property="og:image" content="opt-mimic-website-teaser.png"> <!--Change-->
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --accent-color: rgb(6, 69, 173);
+      --fg-color: rgb(32, 33, 34);
+      --bg-color: #fff;
+      --max-content-width: 800px;
+    }
+
+    body {
+      font-family: sans-serif;
+      font-size: calc(12px + 0.05vw);
+      color: var(--fg-color);
+      background-color: var(--bg-color);
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      margin: 0 auto;
+      width: 90vw;
+      max-width: var(--max-content-width);
+      padding: 2rem 0;
+      background-color: var(--bg-color);
+      min-height: 90vh;
+    }
+
+    h1,
+    h2 {
+      font-weight: 600;
+      margin-top: 1.3em;
+    }
+
+    h1 {
+      font-size: 2.2em;
+    }
+
+    h2 {
+      font-size: 1.9em;
+    }
+
+    p,
+    li {
+      font-size: 1.3em;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--accent-color);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    lite-youtube {
+      position: relative;
+      display: block;
+      contain: content;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    lite-youtube::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==);
+      background-position: top;
+      background-repeat: repeat-x;
+      height: 60px;
+      padding-bottom: 50px;
+      width: 100%;
+      transition: all .2s cubic-bezier(0, 0, .2, 1);
+    }
+
+    lite-youtube::after {
+      content: "";
+      display: block;
+      padding-bottom: 56.25%;
+    }
+
+    lite-youtube>iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 0;
+    }
+
+    lite-youtube>.lty-playbtn {
+      width: 70px;
+      height: 46px;
+      background-color: #212121;
+      z-index: 1;
+      opacity: .8;
+      border-radius: 14%;
+      transition: all .2s cubic-bezier(0, 0, .2, 1);
+      border: 0;
+      cursor: pointer;
+    }
+
+    lite-youtube:hover>.lty-playbtn {
+      background-color: red;
+      opacity: 1;
+    }
+
+    lite-youtube>.lty-playbtn:before {
+      content: "";
+      border-style: solid;
+      border-width: 11px 0 11px 19px;
+      border-color: transparent transparent transparent #fff;
+    }
+
+    lite-youtube>.lty-playbtn,
+    lite-youtube>.lty-playbtn:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+
+    lite-youtube.lyt-activated {
+      cursor: unset;
+    }
+
+    lite-youtube.lyt-activated::before,
+    lite-youtube.lyt-activated>.lty-playbtn {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+
+  <script src="liteyoutube.min.js"></script>
+<!-- <link rel="preload" href="https://www.cs.ubc.ca/~van/papers/2022-SIGGRAPH-juggle/poster.jpg" as="image"><link rel="preconnect" href="https://www.youtube.com/"><link rel="preconnect" href="https://www.google.com/"><link rel="preconnect" href="https://googleads.g.doubleclick.net/"><link rel="preconnect" href="https://static.doubleclick.net/"> -->
+
+  <!-- CDN for latest core CSS (compiled and minified) -->
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet"
+        href="/css/main.css" />
+
+</head>
+
+<body>
+  <main>
+    <h1 style="margin-top: 0;">Online Planning and Control of Physics-Based Skateboarding Animation</h1>
+    <div>
+      <span style="font-style: italic; font-size: 1.3em;">MSc Thesis, Aalto University</span>
+      <p style="line-height: 1.5;">
+        <span style="display: block;">ELIAS MIKKOLA, <span style="font-size: 0.85em;">Aalto University, Finland</span></span>
+      </p>
+    </div>
+    <p>
+      <figure>
+          <img src="skateboard_teaser.gif" class="center">
+          <center><figcaption>
+            The front-view (left) and side-view (right) of an example deployment of the planning and control system. The agent is capable of producing pushing motions as well as goal-conditioned steering.
+          </figcaption></center>
+      </figure>
+    </p>
+    <p style="font-size: 1.4em;">
+      <span style="display: block;"><span style="font-weight: 600;">Paper:</span> <a href="https://arxiv.org/abs/1234asdf">ArXiv</a> </span>
+      <span style="display: block;"><span style="font-weight: 600;">Code:</span> <a href="https://github.com/eliasmikkola/skateboarding">Github</a> </span>
+    </p>
+    <p>
+      This thesis introduces a simulated system for skateboarding, 
+      integrating a mechanical approximation of a real-life skateboard into a simulated and simplified skateboard model onto which we apply online planning-based control techniques.
+      Our system design focuses on replicating realistic skateboarding movements, 
+      using MuJoCo Model Predictive Control (MJPC) framework and utilizing well-validated implementations of model-based planning algorithms, 
+      such as iterative Linear-Quadratic Gaussian with Sampling (iLQS).
+      We incorporate a humanoid model to enact the skateboarding maneuvers, 
+      formulating skateboarding as a robotic control task,
+      and delegate the control task to reference pose tracking, 
+      where subtasks like pushing and steering are solved with hand-crafted heuristic poses and carefully engineered reward functions without the need for recorded motion capture data.
+      We demonstrate the validity of our approximate skateboard mechanics and our system's performance in replicating the pushing and steering movements.
+      Our experiments with the fundamental Ollie trick demonstrate limited success in going beyond the locomotion on flat terrain.
+      Our quantitative and qualitative analyses offer insights into the trade-offs between task efficiency and robustness and the performance differences across sampling and gradient-based planning algorithms.
+      This work serves as a foundation for future research, providing a baseline and benchmark environment for various forms of assisted locomotion styles and skill sets.
+    </p>
+
+      <h2>Summary</h2>
+      <p>
+        We formulate skateboarding as a compound movement involving two distinct phases of motion (pushing and steering).
+        The phase transition is implemented as a simple check of the character's center-of-mass (COM) velocity.
+        Each one of pushing and steering is translated task into a model-based control task with a custom reward function.
+        The system presented applies off-the-shelf reference implementations of state-of-the-art Model Predictive Control (MPC) algorithms paired with MuJoCo physics simulator to solve the control task.
+      </p>
+      <figure>
+        <img src="skateboard_summary.png">
+        <center><figcaption>
+            An overview of the system with task-switching logic. The state machine has two states for the pushing and steering and a failure state, which terminates the simulation run.
+        </figcaption></center>
+      </figure>
+
+
+    <h2>Citation</h2>
+<!--     <p>If you use this code for your research, please cite our paper. The BibTeX entry will be posted after paper becomes available on the ACM website.</p> -->
+    <pre style="line-height: 1.4; overflow: auto; font-size: 1.5rem;">
+      @thesis{mikkola2023online,
+        title={Online Planning and Control of Physics-Based Skateboarding Animation},
+        author={Mikkola, Elias},
+        year={2023},
+        school={Aalto University}
+      }      
+  </main>
+
+  <footer class="site-footer navbar navbar-default">
+
+    <div class="container">
+
+        <div class="address">
+            <div class="row">
+                <div class="col-md-10">
+                    <address>
+                        <strong>Department of Computer Science</strong><br>
+                        Aalto University<br>
+                        Konemiehentie 2, 02150 Espoo, Finland <br>
+                        <abbr title="Email">E:</abbr> <a href="mailto:#">namhee.kim@aalto.fi</a> <br>
+                        <!--<abbr title="Phone">P:</abbr> (123) 456-7890-->
+                    </address>
+
+                </div>
+                <col-md-2>
+                    <strong>Find us on</strong>
+                    <ul class="social-media-list">
+                        
+                        <li>
+                            <a href="https://github.com/TeamARAM"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">TeamARAM</span></a>
+
+                        </li>
+                        
+
+                        
+                        <li>
+                            <a href="https://twitter.com/team_aram"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">@TeamARAM</span></a>
+
+                        </li>
+                        
+                    </ul>
+                </col-md-2>
+            </div>
+        </div>
+
+        <div class="copyright row">
+                &copy; Aalto University
+        </div>
+    </div>
+</footer>
+
+
+</body></html>
