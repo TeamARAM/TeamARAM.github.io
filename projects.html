@@ -73,7 +73,7 @@
 
 <div class="section row">
     <div class="col-md-9">
-        <h2 class="heading">Spacetime Motion Plans</h2>
+        <h2 class="heading" id="spacetime-motion-plan">Spacetime Motion Plans</h2>
         <br>
         <p align="center">
             <img class="namhee" src="imgs/spacetime_teaser_1.gif">
@@ -82,7 +82,7 @@
         <div class="content">
             <br>
         </div>
-        Nam Hee Gordon Kim (in collaboration with Perttu Hämäläinen and Jaakko Lehtinen) is developing an offline reinforcement learning algorithm incorporating multiple keyframe goals and temporally-coherent action segments as the controller output, leveraging GPU-accelerated physics simulation.
+        Project lead: Nam Hee Gordon Kim. Objective: Develop an offline reinforcement learning algorithm incorporating multiple keyframe goals and temporally-coherent action segments as the controller output, leveraging GPU-accelerated physics simulation.
     </div>
 </div>          
                     
@@ -90,7 +90,7 @@
 
 <div class="section row">
     <div class="col-md-9">
-        <h2 class="heading">Motion Tracking with MuJoCo MPC</h2>
+        <h2 class="heading" id="mjpc">Motion Tracking with MuJoCo MPC</h2>
         <br>
         <p align="center">
             <img class="kristian" src="imgs/kristian/image1.gif">
@@ -106,7 +106,7 @@
         </p>
         <div class="content">
             <br>
-            Kristian Hartikainen is developing an online planning and control system leveraging MuJoCo MPC to track motion capture with a simulated humanoid character.
+            Project lead: Kristian Hartikainen. Objective: Develop an online planning and control system leveraging MuJoCo MPC to track motion capture with a simulated humanoid character.
             The system is performant <em>without</em> motion priors and thus does not require training dynamics or policy models. The system can track the overwhelming majority of motion capture samples in AMASS dataset in a zero-shot fashion.
         </div>
     </div>
@@ -115,12 +115,12 @@
 
 <div class="section row">
     <div class="col-md-9">
-        <h2 class="heading">Shadow Puppetry Generation</h2>
+        <h2 class="heading" id="shadowclip">Shadow Puppetry Generation</h2>
         <br>
         <p align="center"><img class="img-responsive" src="imgs/shadowclip_teaser.PNG"></p>
         <div class="content">
             <br>
-            Nicholas Saarela (in collaboration with Perttu Hämäläinen and Jaakko Lehtinen) proposed and evaluated a CLIP-guided image synthesis system for using text prompts to generate human body silhouetttes that matches the input text prompt.
+            Project lead: Nicholas Saarela. Objective: Develop a CLIP-guided image synthesis system for using text prompts to generate human body silhouetttes that matches the input text prompt.
             This system incorporates normalized latents for SMPL / STAR human body pose and shape parameters, which are transformed into silhouette images through rasterization.
             The parameters are optimized via CMA-ES to generate final images that match the similarity to the CLIP embeddings of the input prompt.
         </div>
@@ -130,12 +130,12 @@
 
 <div class="section row">
     <div class="col-md-9">
-        <h2 class="heading">Controlling Skateboarding Movements with MuJoCo MPC</h2>
+        <h2 class="heading" id="skateboard"">Controlling Skateboarding Movements with MuJoCo MPC</h2>
         <br>
         <p align="center"><img class="img-responsive" src="imgs/skateboard_teaser.gif"></p>
         <div class="content">
             <br>
-            Elias Mikkola (in collaboration with Nam Hee Kim and Kristian Hartikainen) proposed and evaluated a system for synthesizing physically simulated skateboarding movements. 
+            Project lead: Elias Mikkola. Objective: Develop a system for synthesizing physically simulated skateboarding movements. 
             The system presented applies off-the-shelf reference implementations of state-of-the-art Model Predictive Control (MPC) algorithms paired with MuJoCo physics simulator to solve the control task.
         </div>
     </div>
@@ -143,12 +143,12 @@
 
 <div class="section row">
     <div class="col-md-9">
-        <h2 class="heading">Learning to Snowboard</h2>
+        <h2 class="heading" id="snowboard">Learning to Snowboard</h2>
         <br>
         <p align="center"><img class="img-responsive" src="imgs/snowboard_teaser.gif"></p>
         <div class="content">
             <br>
-            Elias Mikkola (in collaboration with Nam Hee Kim) designed and evaluated a novel Gym environment to train a snowboarding 2D character.
+            Project lead: Elias Mikkola. Objective: Design and evaluate a novel Gym environment to train a snowboarding 2D character.
             The environment is built with PyBullet and incorporates collision damage avoidance as part of its reward specification.
             Elias implemented a simple parameterization of sinusoids to procedurally generate ski slopes and observed the generalizability of a character that solely relies on proprioceptive state features.
         </div>
@@ -158,14 +158,14 @@
 
 <div class="section row">
     <div class="col-md-9">
-        <h2 class="heading">Building a Billiards-Playing DRL Agent</h2>
+        <h2 class="heading" id="billiards">Building a Billiards-Playing DRL Agent</h2>
         <br>
         <div class="billiards">
         <p align="center"><img alt="Project 1 illustration" src="imgs/billiards_teaser.gif" class="billiards"></p>
         </div>
         <div class="content">
             <br>
-            Nam Hee Gordon Kim (in collaboration with Perttu Hämäläinen and Markus Kirjonen) developed and evaluated a novel off-policy deep reinforcement learning algorithm suitable for solving high-risk high-precision control tasks, 
+            Project lead: Nam Hee Gordon Kim. Objective: Develop and evaluate a novel off-policy deep reinforcement learning algorithm suitable for solving high-risk high-precision control tasks, 
             where the agent cannot correct for earlier mistakes with later actions. The game of billiards was used as a testbed for evaluating the limitations of state-of-the-art DRL algorithms as well as a showcase of the novel algorithm's capability.
         </div>
     </div>
