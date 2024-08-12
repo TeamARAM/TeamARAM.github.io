@@ -24,9 +24,10 @@ div.paper {
   padding: 10px 0;
 }
 
-img.paper-image {
+img.paper-thumbnail {
   width: 180px;
   height: 180px;
+  object-fit: cover;
 }
 
 div {
@@ -55,9 +56,8 @@ p.paper {
 <div class="papers">
 {% for paper in year.papers %}
   <div class="paper">
-    <div class="paper-image">
-      <img src="{{paper.image}}" class="paper-image" />
-    </div>
+    <div class="paper-thumbnail">
+      <a href="{{paper.website}}"><img src="{{paper.thumbnail}}" class="paper-thumbnail" /></a>  </div>
     <div class="paper-desc">
       <p class="paper"><b>{{paper.title}}</b></p>
       <p class="paper">{{paper.authors}}</p>
@@ -71,18 +71,28 @@ p.paper {
 
 ## Theses
 
-### --- 2023 ---
+{% for year in site.data.publications.years %}
+
+{% if year.theses %}
+
+### --- {{year.year}} ---
 
 <div class="papers">
-{% for paper in site.data.publications.theses.year2023 %}
+
+{% for paper in year.theses %}
+
   <div class="paper">
-    <div class="paper-image">
-      <img src="{{paper.image}}" class="paper-image" />
+    <div class="paper-thumbnail">
+      <a href="{{paper.website}}"><img src="{{paper.thumbnail}}" class="paper-thumbnail" /></a>
     </div>
     <div class="paper-desc">
-      <p><b>{{paper.title}}</b></p>
-      <p>{{paper.authors}}</p>
+      <p class="paper"><b>{{paper.title}}</b></p>
+      <p class="paper">{{paper.authors}}</p>
+      <p class="paper">[<a href="{{paper.website}}">Project website</a>]</p>
     </div>
   </div>
 {% endfor %}
+{% endif %}
+{% endfor %}
+
 </div>

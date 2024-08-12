@@ -13,33 +13,25 @@ header:
 excerpt: "Meeting time: 11:00am Every Tuesday, TUAS 1596 and Zoom"
 ---
 
-## Announcements
-
-- Fall 2024 information session will be held in late August, exact date TBD.
-- We are recruiting! Prospective research mentees are encouraged to apply [here](asdf).
-
 ## Meeting Schedule
 
 Meeting slides are made available in members-only calendar invites.
 
-### Fall 2024
+[[Paper discussion spreadsheet](https://docs.google.com/spreadsheets/d/1mtKZQAroeNrVTtavV9VJvH0ZwKZs3IBPCw_X20zsDWw/edit?usp=sharing)]
 
-- 2024-08-13
-  - Paper discussion: [RvS: What is Essential for Offline RL via Supervised Learning?](https://arxiv.org/abs/2112.10751) (Niko)
-  - Project updates
+### Autumn 2024 Meetings
 
-### Summer 2024
+- Time: 11:00am, Every Tuesday
+- Place: TUAS 1596 and Zoom
 
-- 2024-07-23
-  - Paper discussion: (Nami)
-- 2024-07-16
-  - Paper discussion: (Noshaba)
-- 2024-07-09
-  - Paper discussion: (Nam Hee)
+## Announcements
+
+- Autumn 2024 information session will be held in late August, exact date TBD.
+- We are recruiting! Prospective research mentees are encouraged to apply [here](asdf).
 
 ## People
 
-### Aalto University
+### --- Aalto University ---
 
 <style>
   a {
@@ -78,8 +70,13 @@ img.person {
 
 <div class="people">
   {% for person in site.data.people.aalto %}
+    {% if person.headshot == ""%}
+    {% assign headshot = "/assets/imgs/gigachad.jpg" %}
+    {% else %}
+    {% assign headshot = person.headshot %}
+    {% endif %}
     <div class="person">
-      <p class="person"><a href="{{person.website}}"><img class="person" src="{{person.headshot}}"/></a></p>
+      <p class="person"><a href="{{person.website}}"><img class="person" src="{{headshot}}"/></a></p>
       <p class="person"><a href="{{person.website}}">{{person.name}}</a></p>
       <p class="person">{{person.role}}</p>
       <p class="person">{{person.affiliation}}</p>
@@ -87,7 +84,7 @@ img.person {
   {% endfor %}
 </div>
 
-### German Research Center for Artificial Intelligence (DFKI)
+### --- German Research Center for Artificial Intelligence (DFKI) ---
 
 <div class="people">
   {% for person in site.data.people.dfki %}
@@ -106,8 +103,14 @@ img.person {
 </div>
 
 <!-- ### Max Planck Institute for Informatics -->
+<style>
+  h2, h3 {
+   /* text-align: center; */
+}
 
-### Alumni
+</style>
+
+### --- Alumni ---
 
 <div class="people">
   {% for person in site.data.people.alumni %}

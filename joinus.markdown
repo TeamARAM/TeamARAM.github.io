@@ -7,10 +7,10 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/meeting.jpg
-  actions:
-    - label: "Apply Here"
-      url: "#test-link"
-# excerpt: "Meeting time: 11:00am Every Tuesday, TUAS 1596 and Zoom"
+  # actions:
+  #   - label: "Apply Here"
+  #     url: "#test-link"
+excerpt: "Are you a curious researcher interested in embodied intelligence? Team ARAM may be a great place for you."
 ---
 
 # Prospective Members

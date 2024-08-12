@@ -24,17 +24,16 @@ email: teamaram@aalto.fi
 description: >- # this means to ignore newlines until "baseurl:"
   Team ARAM is a cross-institutional embodied intelligence research group based in
   Finland and Germany.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://teamaram.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: teamaram
-github_username:  teamaram
+github_username: teamaram
 
 # Build settings
 # theme: minima
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
