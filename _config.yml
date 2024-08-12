@@ -31,7 +31,7 @@ github_username: teamaram
 
 # Build settings
 # theme: minima
-# theme: minimal-mistakes-jekyll
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
