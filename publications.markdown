@@ -10,7 +10,7 @@ header:
   # actions:
   #   - label: "Join Us"
   #     url: "/joinus/"
-# excerpt: "Meeting time: 11:00am Every Tuesday, TUAS 1596 and Zoom"
+excerpt: "Our mission is to publish exciting works at high-calibre venues for generative and embodied AI."
 ---
 
 ## Conference Papers
