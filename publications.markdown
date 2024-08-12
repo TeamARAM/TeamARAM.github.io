@@ -2,7 +2,7 @@
 title: "Publications"
 mytitle: "Publications"
 layout: splash
-permalink: /publications
+permalink: /publications/
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
