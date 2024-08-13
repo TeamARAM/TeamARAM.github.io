@@ -27,8 +27,8 @@ aalto:
   - name: "Erik Lintunen"
     role: "PhD Student"
     affiliation: "Aalto University"
-    headshot: ""
-    website: "/"
+    headshot: "/assets/imgs/erik_headshot.png"
+    website: "https://www.aalto.fi/en/people/erik-matias-lintunen"
 
 dfki:
   - name: "Noshaba Cheema"
