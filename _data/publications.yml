@@ -1,16 +1,4 @@
 years:
-  - year: "2022"
-    papers:
-      - title: "Learning High-Risk High-Precision Motion Control"
-        authors: "Nam Hee Kim, Markus Kirjonen, Perttu Hämäläinen"
-        website: "https://namheegordonkim.github.io/scoot-mig2022/"
-        venue: "MIG 2022"
-        thumbnail: "/assets/imgs/scoot_thumb.png"
-      - title: "Understanding the evolution of linear regions in deep reinforcement learning"
-        authors: "Setareh Cohan, Nam Hee Kim, David Rolnick, Michiel van de Panne"
-        website: "https://www.cs.ubc.ca/~van/papers/2022-NeurIPS-understanding/index.html"
-        venue: "NeurIPS 2022"
-        thumbnail: "/assets/imgs/linear_regions_thumb.gif"
   - year: "2023"
     papers:
       - title: "Discovering Fatigued Movements for Virtual Character Animation"
@@ -23,3 +11,15 @@ years:
         authors: "Elias Mikkola"
         website: "/projects/skateboard"
         thumbnail: "/assets/imgs/elias_thesis_thumb.png"
+  - year: "2022"
+    papers:
+      - title: "Learning High-Risk High-Precision Motion Control"
+        authors: "Nam Hee Kim, Markus Kirjonen, Perttu Hämäläinen"
+        website: "https://namheegordonkim.github.io/scoot-mig2022/"
+        venue: "MIG 2022"
+        thumbnail: "/assets/imgs/scoot_thumb.png"
+      - title: "Understanding the evolution of linear regions in deep reinforcement learning"
+        authors: "Setareh Cohan, Nam Hee Kim, David Rolnick, Michiel van de Panne"
+        website: "https://www.cs.ubc.ca/~van/papers/2022-NeurIPS-understanding/index.html"
+        venue: "NeurIPS 2022"
+        thumbnail: "/assets/imgs/linear_regions_thumb.gif"
