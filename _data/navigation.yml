@@ -8,8 +8,8 @@ main:
     url: "/publications/"
   # - title: "Projects"
   #   url: "/projects/"
-  - title: "Join Us"
-    url: "/joinus/"
+  - title: "Autumn 2024"
+    url: "/joinus-autumn2024/"
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
