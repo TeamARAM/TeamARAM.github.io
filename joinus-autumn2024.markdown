@@ -59,9 +59,11 @@ Human movement is deeply intertwined with both social and innate learning proces
 _How do we learn and internalize complex motor skills? What roles do our knowledge of the physical world and our morphologies play in attaining these capabilities? And can we translate these processes into algorithms to allow robots to learn skills like human athletes?_ These questions not only push the boundaries of motion control and character animation but also promise to deepen our understanding of the nature of learning and movement for humans, animals, and machines.
 
 For Autumn 2024, we encourage prospective research mentees to think critically about challenges in athletic movement modeling.
-You are also welcome to suggest and work on your own topic.
+You are also welcome to suggest and work on your own topic, as long as it pertains to challenges in embodied AI.
 
 ## Qualifications
+
+As our supervising capacity is limited, **we will only select strongly qualified students who will actively engage with the group.**
 
 ### Culture Fit Criteria
 
@@ -77,7 +79,7 @@ This team is not for you if you are **any** of the following:
 
 - Uncomfortable with leaning into unknowns and failures
 - Looking for an easy or hands-off experience
-- Shy, quiet, or uncomfortable with speaking up (note: this is different from introverted)
+- Shy, quiet, or uncomfortable with speaking up _(note: this is different from introverted)_
 - Tolerant of being confused or afraid of looking stupid
 
 ### Background
